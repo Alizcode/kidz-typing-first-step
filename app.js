@@ -20,6 +20,7 @@ let letter = ran();
           ilm.innerText = letter;
           let text = document.createTextNode(evt.key.toUpperCase());
           col.appendChild(text);
+          new Audio(`resources/sounds/${letter}.mp3`).play()
           
         
 	}
