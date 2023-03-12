@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+}
+
+main > div {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    font-size: 10rem;
+    font-weight: 900;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer > div > div.collection {
+    max-width: 30%;
+    color: brown;
+}

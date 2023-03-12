@@ -1,0 +1,24 @@
+{
+  "name": "kidz-typing-first-step",
+  "version": "1.0.0",
+  "description": "A typing learning game for beginners",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alizberlin/kidz-typing-first-step.git"
+  },
+  "keywords": [
+    "typing",
+    "game"
+  ],
+  "author": "Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alizberlin/kidz-typing-first-step/issues"
+  },
+  "homepage": "https://github.com/Alizberlin/kidz-typing-first-step#readme"
+}
