@@ -2,7 +2,7 @@
 let ilm = document.getElementById("ilm");
 let col = document.getElementById("col");
 let sco = document.getElementById("score");
-let score = 0;
+let score = 1;
 let collection = [];
 let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 function ran() {
@@ -13,14 +13,14 @@ let letter = ran();
 
   document.addEventListener ("keypress", (evt) => {
       if (evt.key.toUpperCase() == letter) {
-          console.log("current key", evt.key);
-          score = score++;
+          
+          s = score++;
           letter = ran();
-          sco.innerText = score;
+          sco.innerText = s;
           ilm.innerText = letter;
           let text = document.createTextNode(evt.key.toUpperCase());
           col.appendChild(text);
-          console.log("new letter", score)
+          
         
 	}
 });

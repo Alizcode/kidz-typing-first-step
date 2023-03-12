@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(resources/pexels-fwstudio-131683.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -10,24 +14,31 @@ header {
     text-align: center;
     padding: 1rem 1rem;
     font-size: 2rem;
+    color: lightgreen;
 }
 
 main > div {
-    width: 50%;
+    width: 300px;
+    height: 300px;
     margin: auto;
     text-align: center;
-    padding: 2rem;
+    background-color: rgba(58, 131, 107, 0.808);
+    color: rgb(215, 241, 156);
+    padding: 1rem;
     font-size: 10rem;
     font-weight: 900;
+    border: 2px solid olivedrab;
+    border-radius: 50%;
 }
 
 footer > div {
+    color: lightgreen;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
 }
 
 footer > div > div.collection {
-    max-width: 30%;
-    color: brown;
+    max-width: 50%;
+    word-wrap: break-word;
 }
