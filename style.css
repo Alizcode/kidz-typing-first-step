@@ -4,7 +4,6 @@ body {
     box-sizing: border-box;
     background-image: url(resources/pexels-fwstudio-131683.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 header {
@@ -16,7 +15,7 @@ header {
     color: lightgreen;
 }
 
-#ilm {
+main > div {
     width: 300px;
     height: 300px;
     margin: auto;
@@ -28,15 +27,21 @@ header {
     font-weight: 900;
     border: 2px solid olivedrab;
     border-radius: 50%;
+    vertical-align: middle;
 }
-
+#ilm {
+    display: none;
+}
 input {
     border-style: hidden;
-    width: 155px;
+    width: 200px;
+    text-align: center;
     padding: 0.2rem;
     border-radius: 10%;
     margin: auto;
     background-color: rgba(58, 131, 107, 0.808);
+    color: rgb(215, 241, 156);
+    font-size: 1rem;
   }
 
 
@@ -48,11 +53,21 @@ input {
 footer > div {
     color: lightgreen;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
 }
 
-footer > div > div.collection {
-    max-width: 50%;
+footer > div > div {
+    width: 20%;
     word-wrap: break-word;
+}
+
+.both {
+    position: absolute;
+    top: 1;
+    left: 48%;
+}
+input[class="both"] {
+    visibility: hidden;
+    z-index: 1;
 }
