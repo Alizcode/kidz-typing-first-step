@@ -4,8 +4,10 @@
   "description": "A typing learning game for beginners",
   "main": "app.js",
   "scripts": {
-    "start": "app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Alizberlin/kidz-typing-first-step/issues"
   },
-  "homepage": "https://github.com/Alizberlin/kidz-typing-first-step#readme"
+  "homepage": "https://github.com/Alizberlin/kidz-typing-first-step",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }

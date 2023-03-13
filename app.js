@@ -2,9 +2,14 @@
 let ilm = document.getElementById("ilm");
 let col = document.getElementById("col");
 let sco = document.getElementById("score");
+let input = document.getElementById("myinput");
 let score = 1;
 let collection = [];
 let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+input.addEventListener ("click", (e) => {
+    input.style.display = 'none';
+} )
 function ran() {
     return str.charAt(Math.floor(Math.random() * 25));
 }

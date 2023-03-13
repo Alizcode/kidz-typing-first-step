@@ -3,8 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: url(resources/pexels-fwstudio-131683.jpg);
-    background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -17,7 +16,7 @@ header {
     color: lightgreen;
 }
 
-main > div {
+#ilm {
     width: 300px;
     height: 300px;
     margin: auto;
@@ -30,6 +29,21 @@ main > div {
     border: 2px solid olivedrab;
     border-radius: 50%;
 }
+
+input {
+    border-style: hidden;
+    width: 155px;
+    padding: 0.2rem;
+    border-radius: 10%;
+    margin: auto;
+    background-color: rgba(58, 131, 107, 0.808);
+  }
+
+
+  
+  .no-outline:focus {
+    outline: none;
+  }
 
 footer > div {
     color: lightgreen;
