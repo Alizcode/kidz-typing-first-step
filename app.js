@@ -1,4 +1,5 @@
 
+
 let ilm = document.getElementById("ilm");
 let col = document.getElementById("col");
 let sco = document.getElementById("score");
@@ -28,7 +29,7 @@ key.addEventListener ('click', (e)=> {
 document.addEventListener ("keypress", (evt) => {
     if (evt.key.toUpperCase() == letter) {
         
-        s = score++;
+        let s = score++;
         letter = ran();
         sco.innerText = s;
         ilm.innerText = letter;

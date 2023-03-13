@@ -23,8 +23,8 @@ Particle = function(p0, p1, p2, p3) {
     this.duration = 3 + Math.random() * 2;
     this.color =  '#' + Math.floor((Math.random() * 0xffffff)).toString(16);
 
-    this.w = 10;
-    this.h = 12;
+    this.w = 8;
+    this.h = 6;
 
     this.complete = false;
 };
@@ -196,12 +196,12 @@ function draw() {
 }
 
 window.onload = function() {
-     initDrawingCanvas();
+    initDrawingCanvas();
     requestAnimationFrame(loop);
 };
 
 function loop() {
- update();
+    update();
     draw();
 
     if (phase === 0 && loader.complete) {
@@ -212,14 +212,14 @@ function loop() {
     }
     else if (phase === 2 && checkParticlesComplete()) {
         // reset
-        // phase = 0;
-        // loader.reset();
-        // exploader.reset();
-        // particles.length = 0;
-        // createParticles();
+        phase = 0;
+        loader.reset();
+        exploader.reset();
+        particles.length = 0;
+        createParticles();
     }
 
-     requestAnimationFrame(loop);
+    requestAnimationFrame(loop);
 }
 
 function checkParticlesComplete() {
@@ -269,3 +269,4 @@ function cubeBezier(p0, c0, c1, p1, t) {
 
     return p;
 }
+
