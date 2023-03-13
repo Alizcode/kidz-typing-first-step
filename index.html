@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="#">
     <title>Alphabets</title>
 </head>
 <body>
     <header>
         <div>Kidz typing Game</div>
+        <canvas id="drawing_canvas"></canvas>
         <div class="media"> </div>
     </header>
 
@@ -24,8 +26,8 @@
         <div>
             <div class="collection"><Span>Collection:</Span> <span id="col">  </span></div>
             <div>
-                <input type="text" class="both">
-                <i class="fa-solid fa-keyboard both" title="Get Keyboard" ></i>
+                <input type="text" class="both" id="el">
+                <i class="fa-solid fa-keyboard both" title="Get Keyboard"  id="keyboard"></i>
             </div>
         
             <div>
@@ -35,5 +37,6 @@
     </footer>
     
     <script src="app.js"></script>
+    <script src="celebrations.js"></script>
 </body>
 </html>
