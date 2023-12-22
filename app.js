@@ -14,6 +14,7 @@ let key = document.querySelector('#keyboard');
 document.getElementById('keyboard').addEventListener ('click', (e)=> {
     document.getElementById('el').focus();
 })
+document.body.ontouchend = function() { document.querySelector('#el').focus(); };
 let score = 1;
 let wrong = 1;
 let collection = [];
@@ -21,6 +22,7 @@ let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let letter = ran();
 ilm.forEach( x => x.innerText = letter)
 input.addEventListener ("click", (e) => {
+    document.getElementById('el').focus();
     input.style.display = 'none';
     currentLetter.style.display = 'block';
     new Audio(`resources/sounds/${letter}.mp3`).play();
@@ -54,7 +56,7 @@ document.addEventListener ("keypress", (evt) => {
         col.appendChild(button);
         new Audio(`resources/sounds/${letter}.mp3`).play();
 ////////Score pane
-        if(s % 10 === 0 ) {
+        if(s % 15 === 0 ) {
             setTimeout(() => {
                 new Audio(`resources/sounds/Tada.mp3`).play();
             }, 350)
@@ -68,9 +70,8 @@ document.addEventListener ("keypress", (evt) => {
         }
         wrong = 0;
         
-	} else {
-        
-        console.log(evt.key.charAt(0).toUpperCase())
+	} else {      
+//        console.log(evt.key.charAt(0).toUpperCase())
         new Audio(`resources/sounds/No.mp3`).play()
         wrong++;
         if(wrong % 5 === 0){
@@ -86,3 +87,4 @@ function ran() {
 function rancolor() {
     return colors[(Math.floor(Math.random() * colors.length))];
 }
+
