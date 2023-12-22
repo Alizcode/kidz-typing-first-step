@@ -6,7 +6,7 @@
   "scripts": {
     "start": "index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build", 
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -24,6 +24,15 @@
   },
   "homepage": "https://github.com/Alizberlin/kidz-typing-first-step",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.1",
+    "@mui/material": "^5.15.1",
+    "bootstrap": "^5.3.2",
     "gh-pages": "^5.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
   }
 }

@@ -6,37 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="#">
     <title>Alphabets</title>
 </head>
 <body>
     <header>
-        <div>Kidz typing Game</div>
-        <div class="media"><span>Color is: </span><span id="color"> LightGreen </span> </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Typing for Kids! </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <button class="btn btn-info m-1" href="#">Home</button>
+                  </li>
+                  <li class="nav-item ">
+                    <button class="btn btn-info m-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-controls="collapseWidthExample" aria-current="page"> My letters</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
     <main>
-        <div id="ilm">X</div>
-        <div id="no-outline">
-            <input type="text" id="myinput" value="Click to start typing" />
+      
+
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body mt-1">
+            <div class="collection"><Span>Collection:</Span> <span id="col"></span></div>
+          </div>
         </div>
-        <div id="your-score"><span>Score</span> <span id="popupScore">0</span></div>
-    </main>
+      </div>
+      
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="d-flex justify-content-center"> 
+        </div>
+          <div id="no-outline">
+            <div class="rounded-pill m-1 current-letter" ><span>Current letter is: </span><span class="ilm">X</span> </div>
+              <button class="btn btn-success" type="button" id="myinput" value="Click to start typing" >Click to start typing</button>
+          </div>
+      </div>
+      <span class="ilm myscore rounded-circle text-center">X</span>
+<!--***************************** #Score Pane ****************************** -->
+      <div class="score-pane position-absolute end-0 bottom-0 d-flex justify-content-between p-2">
+          <div class="fw-bold">Score:</div>
+          <div class="badge bg-primary rounded-pill" id="score">0</div>
+        </div>     
+        <!--***************************** End Score Pane ****************************** -->
+    </main >
     <footer>
         <div>
-            <div class="collection"><Span>Collection:</Span> <span id="col">  </span></div>
-            <div>
-                <input type="text" class="both" id="el">
+          <div class="position-absolute bottom-0 start-0 bottom-pane p-2 fw-bold"><span>Color: </span><span class="color"> LightGreen </span></div>
+            
+            <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                <input type="text" class="both d-none" id="el">
                 <i class="fa-solid fa-keyboard both" title="Get Keyboard"  id="keyboard"></i>
             </div>
-        
-            <div>
-                <span>Score:</span>         <span id="score">0</span>
-            </div>
         </div>
-        <!-- <canvas id="drawing_canvas"></canvas> -->
+       
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
